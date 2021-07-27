@@ -1,0 +1,13 @@
+{
+	"Name": "winservice",
+	"DisplayName": "Golang Process Gatherer",
+	"Description": "Run the Process Gatherer",
+	
+	"Dir": "C:\\users\\BlackShark\\go\\src",
+	"Exec": "C:\\windows\\system32\\cmd.exe",
+	"Args": ["/C","C:\\Users\\BlackShark\\go\\src\\github.com\\l3lackShark\\winservice\\winservice.exe"],
+
+	
+	"Stderr": "C:\\Users\\BlackShark\\go\\src\\github.com\\l3lackShark\\winservicerunner\\builder_err.log",
+	"Stdout": "C:\\Users\\BlackShark\\go\\src\\github.com\\l3lackShark\\winservicerunner\\builder_out.log"
+}
