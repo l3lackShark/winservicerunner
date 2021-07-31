@@ -21,6 +21,11 @@ func getProcessID(name string) (uint32, error) {
 	if e != nil {
 		return 0, e
 	}
+	defer func() {
+		if err := windows.CloseHandle(h); err != nil {
+			panic(err)
+		}
+	}()
 	p := windows.ProcessEntry32{Size: processEntrySize}
 	for {
 		e := windows.Process32Next(h, &p)
